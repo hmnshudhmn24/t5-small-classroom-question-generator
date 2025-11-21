@@ -1,0 +1,15 @@
+transformers>=4.30.0
+datasets>=2.8.0
+torch>=1.13.0
+accelerate
+evaluate
+sentencepiece
+pandas
+numpy
+scikit-learn
+tqdm
+fastapi
+uvicorn
+gradio
+pytest
+python-dotenv
