@@ -1,19 +1,3 @@
----
-language:
-  - en
-tags:
-  - question-generation
-  - education
-  - t5
-  - nlp
-license: apache-2.0
-pipeline_tag: text-generation
-model_name: t5-small-classroom-question-generator
-base_model: t5-small
-datasets:
-  - custom
----
-
 # 🎓 Classroom Question Generator (T5-Small)
 
 An AI model that automatically generates **age-appropriate classroom questions** (Grades 1–10) from a simple topic.
@@ -26,7 +10,7 @@ An AI model that automatically generates **age-appropriate classroom questions**
 
 This project uses a fine-tuned **T5-small** Transformer and includes preprocessing, training, evaluation, inference, FastAPI API, and a Gradio UI.
 
----
+
 
 # 🚀 Features
 
@@ -38,7 +22,7 @@ This project uses a fine-tuned **T5-small** Transformer and includes preprocessi
 ✓ Apache 2.0 license  
 ✓ HuggingFace model card included  
 
----
+
 
 # 📁 Project Structure
 
@@ -71,7 +55,7 @@ classroom-question-generator/
 └── README.md
 ```
 
----
+
 
 # 📦 Installation
 
@@ -81,7 +65,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
+
 
 # 🔄 Dataset Preprocessing
 
@@ -89,7 +73,7 @@ pip install -r requirements.txt
 python -m src.dataset_preprocessing   --input data/raw/dataset_raw.csv   --output data/processed/dataset_clean.jsonl
 ```
 
----
+
 
 # 🏋️ Train Model
 
@@ -97,7 +81,7 @@ python -m src.dataset_preprocessing   --input data/raw/dataset_raw.csv   --outpu
 python -m src.train
 ```
 
----
+
 
 # 🧪 Evaluate Model
 
@@ -105,7 +89,7 @@ python -m src.train
 python -m src.evaluate
 ```
 
----
+
 
 # 🤖 Inference Example
 
@@ -114,7 +98,7 @@ from src.inference import generate_question
 print(generate_question("Photosynthesis", 6))
 ```
 
----
+
 
 # 🌐 FastAPI Server
 
@@ -122,7 +106,7 @@ print(generate_question("Photosynthesis", 6))
 uvicorn app.api:app --reload --port 7860
 ```
 
----
+
 
 # 🎨 Gradio UI
 
@@ -130,7 +114,7 @@ uvicorn app.api:app --reload --port 7860
 python app/ui.py
 ```
 
----
+
 
 # 🎯 Prompt Format
 
@@ -138,7 +122,7 @@ python app/ui.py
 topic: <topic> | grade: <grade>
 ```
 
----
+
 
 # 📚 Example Outputs
 
@@ -148,8 +132,3 @@ topic: <topic> | grade: <grade>
 | Gravity        | 7     | Why do objects fall toward the Earth?           |
 | Water Cycle    | 4     | How does water move from the ground to the sky? |
 
----
-
-# 📄 License
-
-Apache License 2.0
