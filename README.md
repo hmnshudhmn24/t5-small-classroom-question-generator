@@ -1,4 +1,4 @@
-# 🎓 Classroom Question Generator (T5-Small)
+# 🎓 Classroom Question Generator
 
 An AI model that automatically generates **age-appropriate classroom questions** (Grades 1–10) from a simple topic.
 
